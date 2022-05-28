@@ -10,6 +10,7 @@ import Lounge from './components/Lounge';
 import LinkPage from './components/LinkPage';
 import RequireAuth from './components/RequireAuth';
 import { Routes, Route } from 'react-router-dom';
+import DeleteDog from './components/Delete';
 
 const ROLES = {
   'User': 2001,
@@ -35,6 +36,7 @@ function App() {
 
         <Route element={<RequireAuth allowedRoles={[ROLES.Editor]} />}>
           <Route path="dogs" element={<Dogs />} />
+          <Route path="dogs/:id" element={<DeleteDog />} />
         </Route>
 
 
