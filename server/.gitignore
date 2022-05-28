@@ -1,5 +1,4 @@
 env/
-mysql-data/
 
 *.log
 *.pot
@@ -11,3 +10,5 @@ mysql-data/
 db.sqlite3
 
 
+__pycache__
+dockers/mysql-data/
